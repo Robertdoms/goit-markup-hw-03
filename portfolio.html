@@ -19,28 +19,29 @@
   </head>
 
   <body>
-    <header class="page-header">
-      <div class="container main-nav">
-      <nav>
+    <header class="header">
+      <div class="container">
+        <nav class="nav-header">
         <a class="logo" href="./index.html"><span>Web</span>Studio </a>
         <ul class="menu-nav list">
-          <li><a href="./index.html" class="menu">Студия</a></li>
-          <li><a href="./portfolio.html" class="menu link current">Портфолио</a></li>
-          <li><a href="#" class="menu">Контакты</a></li>
+          <li class="item"><a href="./index.html" class="menu link">Студия</a></li>
+          <li class="item"><a href="./portfolio.html" class="menu link current" >Портфолио</a></li>
+          <li class="item"><a href="#" class="menu">Контакты</a></li>
         </ul>
       </nav>
       <ul class="menu-link list">
-        <li>
+        <li class="item">
           <a href="mailto:info@devstudio.com" class="link"
             >info@devstudio.com</a
           >
         </li>
-        <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+        <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
       </ul>
       </div>
     </header>
     <main>
       <section class="filter-list">
+        <div class="container">
         <h1 class="visually-hidden">фільтер</h1>
         <ul>
           <li>
@@ -59,7 +60,7 @@
             <button class="filter" type="button">Маркетинг</button>
           </li>
         </ul>
-        <ul>
+        <ul class="teem-list">
           <li>
             <img
               src="./images/notebook.jpg"
@@ -136,9 +137,11 @@
             <p class="text">Приложение</p>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <footer>
+      <div class="container">
       <a class="logo-2" href="./index.html"><span>Web</span>Studio </a>
       <address>
         <ul>
@@ -160,6 +163,7 @@
           </li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>
