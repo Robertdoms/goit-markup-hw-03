@@ -13,6 +13,23 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.item {
+  padding: 0;
+  width: 49px;
+  height: 16px;
+}
 .logo {
   color: var(--title-text-color);
 }
@@ -22,6 +39,9 @@ span {
 .list {
   list-style: none;
 }
+.header .container {
+  display: flex;
+}
 .menu {
   font-weight: 500;
   font-size: 14px;
@@ -29,23 +49,28 @@ span {
   letter-spacing: 0.02em;
   color: #212121;
 }
-.menu-link.list{
-  margin-bottom: 0;
+.menu-nav.list {
+  margin-left: 93px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  text-align: center;
 }
-.menu-nav.list .menu:focus,:hover  {
+.menu-nav.list .menu:focus,
+:hover {
   color: var(--accent-color);
 }
-.menu-link .link:hover,:focus {
+.menu-link .link:hover,
+:focus {
   color: var(--accent-color);
 }
-.menu-link{
+.menu-link {
   display: flex;
 }
-.menu-link .item{
+.menu-link .item {
   margin-right: 50px;
 }
 .menu-link .item:last-child {
-  margin-right: 0;
+  margin-right: 0px;
 }
 .menu-nav {
   font-weight: 500;
@@ -55,8 +80,14 @@ span {
   color: #212121;
   display: flex;
 }
-.menu-nav .item{
+.menu-nav .item {
   margin-right: 50px;
+}
+.menu-nav .item:last-child {
+  margin-right: o;
+}
+.nav-header {
+  display: flex;
 }
 .link {
   font-weight: 500;
@@ -65,14 +96,13 @@ span {
   letter-spacing: 0.02em;
   color: #757575;
 }
-.container.main-nav {
+.container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   outline: 1.5px solid violet;
-  
 }
 .current {
   color: var(--accent-color);
@@ -81,10 +111,7 @@ span {
   background-color: #2f303a;
   width: 1600px;
   height: 600px;
-  text-align: center;
-  padding-left: 452px;
-  padding-right: 452px;
-  padding-top: 200px;
+  margin-bottom: 30px;
 }
 .hero-title {
   color: var(--hero-color);
@@ -93,22 +120,12 @@ span {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 696px;
-  height: 120px;
-  margin: 0;
-  margin-bottom: 30px;
-  
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 30px;
 }
 .section-title {
   color: var(--title-text-color);
-}
-.feature-list{
-  width: 1170px;
-  height: 101px;
-  margin-top: 94px;
-  margin-left: 215px;
-  margin-right: 215px;
-  
 }
 .feature-list .title {
   color: var(--title-text-color);
@@ -117,19 +134,23 @@ span {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin: 0;
   margin-bottom: 10px;
 }
 .feature-list .text {
   color: var(--text-color);
   width: 270px;
-  height: 75px;
   display: flex;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin: 0;
+}
+.feature-list .feature {
+  display: flex;
+  align-items: baseline;
+  margin-right: 30px;
+  margin-bottom: 94px;
+  margin-top: 94px;
 }
 .team {
   background: #f5f4fa;
@@ -140,6 +161,8 @@ span {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .team .text {
   color: var(--text-color);
@@ -147,18 +170,22 @@ span {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 .filter-list .title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  margin: 0;
 }
 .filter-list .text {
   color: var(--text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
+  margin: 0;
 }
 .button {
   color: var(--hero-color);
@@ -173,7 +200,8 @@ span {
   border-radius: 4px;
   cursor: pointer;
   border: none;
-  margin-bottom: 200px;
+  margin: 0 auto;
+  display: block;
 }
 
 .filter-list .filter:hover {
@@ -204,12 +232,25 @@ span {
   color: #212121;
   border: none;
 }
+.work-list .work {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 94px;
+}
+.work-list {
+  width: 1170p;
+  margin: 15px;
+}
 .logo {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  margin-left: 215px;
+  margin-top: 24px;
+  margin-bottom: 25px;
 }
 .logo-2 {
   font-family: "Raleway";
@@ -218,7 +259,14 @@ span {
   font-size: 26px;
   line-height: 1.19;
   color: #ffffff;
+  margin-bottom: 20px;
 }
+.logo-2 :hover,
+:focus {
+  text-decoration: underline;
+  text-decoration-color: var(--accent-color);
+}
+
 .heading {
   color: var(--title-text-color);
   margin-top: 0;
@@ -228,7 +276,6 @@ span {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  
 }
 address {
   font-weight: 400;
@@ -238,6 +285,10 @@ address {
   font-style: normal;
 }
 footer {
+  box-sizing: border-box;
+  width: 1600px;
+  height: 252px;
+  padding-top: 60px;
   background: #2f303a;
 }
 a {
@@ -268,8 +319,10 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 9px;
 }
-.address:hover, :focus {
+.address:hover,
+:focus {
   text-decoration: underline;
   color: var(--accent-color);
 }
@@ -279,12 +332,15 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--hero-color);
+  margin-bottom: 9px;
 }
-.maps:hover, :focus {
+.maps:hover,
+:focus {
   text-decoration: underline;
   color: var(--accent-color);
 }
-.logo-2:hover, :focus  {
-  text-decoration: underline;
-  text-decoration-color: var(--accent-color);
+.teem-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
